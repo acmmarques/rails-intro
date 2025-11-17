@@ -1,0 +1,17 @@
+<h1>Contact us:</h1>
+<p>📩</p>
+
+
+<ol>
+  <% @members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ol>
+<%= link_to 'Go home!', root_path %>
+
+<form action="">
+
+  <input type="text" name="member" value="<%= params[:member] %>">
+  <input type="submit">
+
+</form>
